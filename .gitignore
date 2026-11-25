@@ -1,0 +1,9 @@
+# App virtual environment (local only; never commit)
+.venv-app/
+
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc

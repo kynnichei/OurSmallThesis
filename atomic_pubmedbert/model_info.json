@@ -1,0 +1,64 @@
+{
+  "kind": "bert",
+  "model_name": "atomic_pubmedbert",
+  "data_prefix": "atomic",
+  "config": {
+    "model_name": "atomic_pubmedbert",
+    "data_prefix": "atomic",
+    "bert_model": "microsoft/BiomedNLP-BiomedBERT-base-uncased-abstract-fulltext",
+    "max_len": 512,
+    "batch_size": 32,
+    "epochs": 5,
+    "patience": 2,
+    "lr": 2.7636962256329587e-05,
+    "warmup_frac": 0.10871051461746972,
+    "weight_decay": 0.00015001740427119943,
+    "hidden_dropout": 0.14496687614388903,
+    "n_classes": 3
+  },
+  "label_map": {
+    "entailment": 0,
+    "contradiction": 1,
+    "neutral": 2
+  },
+  "best_params": {
+    "lr": 2.7636962256329587e-05,
+    "batch_size": 32,
+    "weight_decay": 0.00015001740427119943,
+    "warmup_frac": 0.10871051461746972,
+    "hidden_dropout": 0.14496687614388903
+  },
+  "tuning_val_macro_f1": 0.9426692403806989,
+  "reused_tuning_checkpoint": true,
+  "val_accuracy": 0.9430650684931506,
+  "val_macro_f1": 0.9426692403806989,
+  "n_train": 36799,
+  "n_val": 2336,
+  "history": {
+    "train_loss": [
+      0.4238901516534138,
+      0.15081632453835384,
+      0.10006750872518982,
+      0.07469196294101639
+    ],
+    "val_loss": [
+      0.205274132093134,
+      0.1952826556341391,
+      0.2456080081859884,
+      0.2439544167057037
+    ],
+    "val_acc": [
+      0.9272260273972602,
+      0.9430650684931506,
+      0.934931506849315,
+      0.9409246575342466
+    ],
+    "val_macro_f1": [
+      0.9264768320587059,
+      0.9426692403806989,
+      0.934196504956866,
+      0.9404865495655929
+    ]
+  },
+  "saved_at": "2026-11-09 03:16:51"
+}

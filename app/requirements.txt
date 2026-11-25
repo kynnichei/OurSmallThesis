@@ -1,0 +1,12 @@
+# Deployment dependencies for the DDI claim-verification demo.
+# Versions match the training/eval environment (repo-root requirements.txt).
+gradio>=4.44
+torch==2.11.0
+transformers==5.15.0
+spacy==3.8.14
+scispacy==0.6.2
+pandas==3.0.3
+google-genai==2.3.0
+python-dotenv==1.1.1
+# scispaCy biomedical model (required by the atomiser; no silent fallback):
+#   pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_core_sci_sm-0.5.4.tar.gz
